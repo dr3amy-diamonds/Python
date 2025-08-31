@@ -146,5 +146,159 @@ print(f"La suma de {numero} es {suma}")
 
 """
 Contar vocales
-6. Pide una palabra y cuenta cuántas vocales tiene.
+6. Pide una palabra y cuenta cuántas letras tiene.
 """
+Palabra=input("Digita una palabra cualquiera: ")
+Contador = 0
+
+for x in Palabra.lower():
+    Contador+=1
+print((f"La palabra '{Palabra}' tiene {Contador} vocales."))
+
+"""
+Escribe un programa en Python que:
+7.Pida al usuario que ingrese una palabra.
+    Recorra la palabra letra por letra.
+    Cuente cuántas vocales (a, e, i, o, u) contiene.
+    Finalmente, muestre en pantalla un mensaje con el total de vocales encontradas.
+"""
+
+termino = input("Digita una palabra cualquiera: ")
+medidor = 0
+vocales = ["a", "e", "i", "o", "u"]
+for x in termino:
+    if x.lower() in vocales:
+        medidor += 1
+print(f"La palabra '{termino}' tiene {medidor} vocales.")
+    
+
+"""
+Escribe un programa en Python que:
+
+8. Pida al usuario que escriba una frase.
+Cuente cuántas palabras tiene la frase.
+Muestre en pantalla el resultado.
+"""
+Cadena=input("Escribe una frase: ")
+calcular=1
+
+for x in Cadena:
+    if x == " ":
+        calcular +=1
+print(f"La frase'{Cadena}' tiene {calcular} palabras.")
+
+
+#Bucle While
+
+"""
+Adivina el número
+1. Genera un número secreto (ej. 7) y pide al usuario que lo adivine hasta que acierte.
+"""
+Numero_Secreto= int(input("Digita un número: "))
+
+while Numero_Secreto!=7:
+    print("Sigue intendado")
+    Numero_Secreto= int(input("Digita un número: "))
+else:
+    print("Le diste al clavo")
+
+"""
+Contador regresivo
+2. Pide un número e imprime un conteo regresivo hasta 0.
+"""
+
+pedir_numero=int(input("Digita un número: "))
+
+while pedir_numero:
+    pedir_numero=pedir_numero-1
+    print("El número es: ", pedir_numero )
+
+"""
+Suma hasta que el usuario escriba 0
+3. Pide números al usuario y súmalos hasta que escriba 0.
+"""
+random_number_1 = int(input("Digita el primer número al azar: "))
+random_number_2 = int(input("Digita el segundo número al azar: "))
+
+if random_number_1 != 0 and random_number_2 != 0:
+    suma_random = random_number_1 + random_number_2
+    print(f"La suma de '{random_number_1}' y '{random_number_2}' es '{suma_random}'")
+else:
+    print("No se puede hacer la suma, uno de los números es 0")
+
+"""
+Menú interactivo
+4. Crea un menú con opciones (ejemplo: 1. Saludar, 2. Sumar, 3. Salir).
+Usa un while para que el menú se repita hasta que el usuario elija salir.
+"""
+
+opcion = ""  # Inicializamos la variable
+
+while opcion != "3":   # Se repite hasta que elija salir
+    print("\n--- MENÚ PRINCIPAL ---")
+    print("1. Saludar")
+    print("2. Sumar")
+    print("3. Salir")
+
+    opcion = input("Elige una opción: ")
+
+    if opcion == "1":
+        print("¡Hola! Encantado de saludarte 😊")
+    elif opcion == "2":
+        a = int(input("Dame el primer número: "))
+        b = int(input("Dame el segundo número: "))
+        print(f"La suma es: {a + b}")
+    elif opcion == "3":
+        print("¡Adiós!")
+    else:
+        print("Opción no válida, intenta otra vez.")
+
+"""
+Menú de Figuras Geométricas
+5. Crea un programa en Python que muestre un menú con las siguientes opciones:
+Calcular el área de un cuadrado.
+Calcular el área de un triángulo.
+Calcular el área de un círculo.
+Salir.
+El programa debe repetirse hasta que el usuario elija la opción 4 (Salir).
+"""
+opcion = ""  # Inicializamos la variable
+
+while opcion != "4":   # Se repite hasta que elija salir
+    print("\n--- MENÚ PRINCIPAL ---")
+    print("1. Calcular el área de un cuadrado")
+    print("2. Calcular el área de un triángulo")
+    print("3. Calcular el área de un círculo")
+    print("4. Salir")
+
+    opcion = input("Elige una opción: ")
+
+    if opcion == "1":
+        lado=float(input("Escribe la longitud del lado:"))
+        area=lado * lado
+        print(f"El área del cuadrado es {area}")
+    elif opcion == "2":
+        base = float(input("Digita la base: "))
+        altura = float(input("Digita la altura: "))
+        area_triagulo= (base * altura)/2
+        print(f"El área de un triangulo es {area_triagulo}")
+    elif opcion == "3":
+        radio=float(input("Escribe el radio del circulo: "))
+        A= 3.1416 *(radio**2)
+        print(f"El área de un triangulo es {A}")
+    elif opcion=="4":
+        print("¡Hasta luego! 👋")
+    else:
+        print("Opción no válida, intenta otra vez.")
+
+"""
+Número positivo obligatorio
+Pide al usuario un número. Si es negativo, vuelve a pedir hasta que ingrese un número positivo.
+"""
+numero_pos_neg = int(input("Digita un número: "))
+
+while numero_pos_neg>=0:
+    print(f"El número digitado es {numero_pos_neg}")
+    numero_pos_neg = int(input("Digita un número: "))
+else:
+    print(f"Número negativo {numero_pos_neg}")
