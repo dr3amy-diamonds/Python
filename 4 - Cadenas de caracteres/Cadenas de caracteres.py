@@ -44,6 +44,7 @@ edad = 30 #Toma el número
 saludo = "Hola, %s.  Tienes %d años." % (nombre, edad)
 print(saludo)
 
+
 """
 Alternativas
 F-strings (Formatted String Literals): Introducidas en Python 3.6, son la forma recomendada para formatear cadenas, colocando las variables o expresiones entre llaves {} dentro de la cadena, precedida por la letra f.
@@ -109,6 +110,25 @@ print(abecedario[0])
 print(abecedario[-1]) 
 
 """
+Busqueda de posiciones
+"""
+
+cadena = "He was identified in July 2025 through genetic genealogy research conducted by Innovative Forensic Investigations"
+print(cadena)
+#Ejemplo
+print( cadena.find("Carl"))
+print( cadena.find("carl"))
+print( cadena.find("C"))
+print( cadena.lower().find("m"))
+
+"""
+Busqueda por Ocurrencia
+"""
+print(cadena.lower().count("july"))  
+
+#Ejemplo
+
+"""
 Las cadenas son matrices
 
 Como muchos otros lenguajes de programación populares, las cadenas en Python son matrices de caracteres Unicode.
@@ -140,9 +160,8 @@ print(cadena.replace("o", "x"))
 División de Caracteres
 """
 print(cadena.split("o"))
+
 """
-
-
 Métodos String
 
 Algunos métodos Strings son:
