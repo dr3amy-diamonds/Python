@@ -109,13 +109,20 @@ class Estudiantes:
         self.nombre = nombre
         self.__nota = nota
 
-
     def mostrar_informacion(self):
         print(f"{self.nombre} ha sacado un {self.__nota}")
 
     @property
     def nota(self):
-        return self.__nota
+        return self.__nota   # solo devuelve el valor
+
+    @nota.setter
+    def nota(self, nueva_nota):
+        if 0 <= nueva_nota <= 100:
+            self.__nota = nueva_nota
+        else:
+            print("Error: la nota debe estar entre 0 y 100")
+
 
 #Mostrar resultados
 e1 = Estudiantes("Sofía", 85)
@@ -135,3 +142,26 @@ Un método cambiar_temperatura() que solo acepte valores entre -50 y 100 grados.
 
 Usa @property y @temperatura.setter para controlar el acceso.
 """
+
+class Termometro:
+    def __init__(self, temperatura):
+        self.__temperatura = temperatura
+
+    def mostrar_temperatura(self):
+        print(f'La temperatura es {self.__temperatura}')
+
+    @property
+    def temperatura(self):
+        return self.__temperatura
+
+    @temperatura.setter
+    def temperatura(self, nueva_temp):
+        if -50 <= nueva_temp <= 100:
+            self.__temperatura = nueva_temp
+        else:
+            print("Error, los datos están fuera del rango")
+
+#Mostrar resultados
+mi_temperatura = Termometro(25)
+mi_temperatura.cambiar_temperatura(-100)  # Intento fuera de rango
+mi_temperatura.mostrar_temperatura()
