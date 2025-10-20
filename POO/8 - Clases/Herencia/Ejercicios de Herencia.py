@@ -252,3 +252,69 @@ class Gerente(Empleado):
 mi_empleado=Empleado("Tobias", 250)
 mi_gerente=Gerente("Caicedo", 800, "Finanzas")
 mi_gerente.mostrar_info()
+
+
+"""
+Ejercicio 7: Herencia múltiple
+
+👉 Objetivo: usar más de una clase padre.
+
+Instrucciones:
+
+1. Crea una clase Volador con método volar().
+2. Crea una clase Nadador con método nadar().
+3. Crea una clase Pato que herede de ambas y tenga método presentarse()
+    que diga: "Soy un pato, puedo volar y nadar".
+4. Comprueba que el objeto Pato puede llamar a los tres métodos.
+"""
+
+class Volador:
+    def volar(self):
+        return "Puedo volar"
+
+class Nadador:
+    def nadar(self):
+        return "Puedo nadar"
+    
+
+class Pato(Volador, Nadador):
+    def presentarse(self):
+        print(f'Hola, soy un pato, {self.volar()} y {self.nadar()}')
+
+#Crear objetos
+
+pato=Pato()
+pato.volar()
+pato.nadar()
+pato.presentarse()
+
+"""
+Ejercicio 8: Llamadas encadenadas con super()
+
+👉 Objetivo: observar el orden de ejecución en una herencia en cadena.
+
+Instrucciones:
+
+1. Crea tres clases: A, B(A), y C(B).
+2. Cada una debe tener un método saludar() que imprima su nombre de clase
+    y luego llame a super().saludar().
+3. Crea un objeto C y llama a saludar().
+4. Observa el orden en que se imprimen los mensajes.
+"""
+
+class A:
+    def saludar(self):
+        print("Hola soy la Clase A")
+
+class B(A):
+    def saludar (self):
+        super().saludar()
+        print("Hola, Soy la clase B")
+
+class C(B):
+    def saludar(self):
+        super().saludar()
+        print( "Hola, soy la clase C")
+
+obj = C()
+obj.saludar()
