@@ -63,6 +63,7 @@ def validar_edad(edad):
     else:
         print("Edad válida ✅")
 
+
 try:
     edad = int(input("Ingresa tu edad: "))
     validar_edad(edad)
