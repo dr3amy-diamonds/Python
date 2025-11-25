@@ -1,0 +1,4 @@
+Los datos son una colección de hechos, números, palabras y observaciones que representan información útil. 
+Se utilizan en diversas áreas, como la estadística y la informática, para construir soluciones y desarrollar algoritmos. 
+Los datos pueden ser considerados como hechos empíricos que, al ser procesados, se convierten en información valiosa que mejora la toma de decisiones. 
+Además, es importante diferenciar entre datos y información: los datos son hechos sin procesar, mientras que la información es el resultado de procesar esos datos en un contexto específico. 
