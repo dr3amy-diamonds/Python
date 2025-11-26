@@ -1,0 +1,18 @@
+{
+  "Nombre": "Missouri",
+  "Apellido": "Denesik",
+  "Edad": 27,
+  "Documento": 1003882,
+  "Ciudad": "Berlin",
+  "hobby": [
+    "Leer",
+    "Jugar Fútbol",
+    "Viajar"
+  ],
+  "idiomas": [
+    "Alemán",
+    "Español",
+    "Portugues",
+    "Inglés"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "nombre": "Sandra",
+    "apellido": "Upton",
+    "edad": 24,
+    "altura": 1.6,
+    "es_estudiante": true,
+    "ciudad": "Montería",
+    "pais": "Colombia",
+    "idiomas": [
+        "Español",
+        "Inglés"
+    ],
+    "materias_favoritas": [
+        "Matemáticas",
+        "Ciencias",
+        "Arte"
+    ]
+}

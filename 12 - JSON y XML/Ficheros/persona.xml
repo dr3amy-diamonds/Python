@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<persona>
+    <nombre>Sandra</nombre>
+    <apellido>Upton</apellido>
+    <edad>24</edad>
+    <altura>1.6</altura>
+    <es_estudiante>True</es_estudiante>
+    <ciudad>Montería</ciudad>
+    <pais>Colombia</pais>
+    <idiomas>
+        <idioma>Español</idioma>
+        <idioma>Inglés</idioma>
+    </idiomas>
+    <materias_favoritas>
+        <materia>Matemáticas</materia>
+        <materia>Ciencias</materia>
+        <materia>Arte</materia>
+        <materia>Historia</materia>
+    </materias_favoritas>
+</persona>
