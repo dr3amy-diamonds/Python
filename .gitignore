@@ -1,0 +1,118 @@
+# Entornos virtuales y dependencias
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+node_modules/
+vendor/
+
+# Variables de entorno y configuración local
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env_datos
+
+# Archivos generados automáticamente
+*.pyc
+__pycache__/
+*.cache
+.cache/
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+# Si necesitas versionar el archivo de ejemplo de ejercicios:
+# ¡ATENCIÓN! Con la regla *.log se ignorará este archivo.
+# Descomenta la línea siguiente para hacer una excepción:
+#!Estudio/11 - Manejo de ficheros/Ficheros/log.txt
+
+# Compilación y distribución
+build/
+dist/
+*.egg-info/
+*.egg
+*.exe
+*.dll
+.idea
+
+# Bases de datos locales
+*.sqlite
+*.sqlite3
+*.db
+
+# Archivos de datos (CSV, Parquet, Pickle, etc.)
+# Estos archivos suelen ser generados o descargados y no deben versionarse
+*.csv
+*.parquet
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.feather
+*.orc
+*.xlsx
+*.xls
+*.json
+*.xml
+*.tsv
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+# Excepciones: permitir archivos markdown y documentación
+!*.md
+!README*
+!LEEME*
+
+# Archivos de IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.spyproject/
+.project
+.settings/
+*.iml
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Herramientas y pruebas de Python
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pylint.d/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+.python-version
+.ipynb_checkpoints/
+ipython/
+
+# Caches de herramientas JS/otras
+npm-cache/
+yarn-cache/
+.pnpm-store/
+.babel-cache/
+.parcel-cache/
+.eslintcache
+
+# Otros específicos del entorno local
+tmp/
+temp/
+logs/
+*.orig
+*.rej
